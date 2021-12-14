@@ -1,9 +1,10 @@
-import { ADD_PLAN, GET_PLANS } from "./actionTypes"
+import { ADD_PLAN, GET_PLANS, SET_PLAN } from "./actionTypes"
 
 const initstate={
     plans:{
         loading:true,
         data:[],
+        choice:{},
         error:false
     }
 }
@@ -26,6 +27,15 @@ export const reducer=(state=initstate,action)=>{
                 data:action.payload
             }
         }
+
+        
+        case SET_PLAN:{
+            return {
+                ...state,
+                choice:action.payload
+            }
+        }
+
 
         
     default :

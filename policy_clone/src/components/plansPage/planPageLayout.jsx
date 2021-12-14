@@ -74,7 +74,7 @@ function PlanLayout()
                 <Typography className={classes.title} variant="h5">13 Third Party Plans For You</Typography>
                 
                 {temp.map((e)=>(
-                    <Plan imageSrc={e.companyIcon} plantype={e.type} price={`RS .${e.price}`} ></Plan>
+                    <Plan imageSrc={e.companyIcon} plantype={e.type} price={`RS .${e.price}`} data={e}></Plan>
                 ))}
                 
                 
