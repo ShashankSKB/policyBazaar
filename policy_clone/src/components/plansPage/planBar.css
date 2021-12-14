@@ -4,7 +4,8 @@
     flex-direction: row;
     /* border: 1px solid #253858CC; */
     justify-content: center;
-
+    margin: 20px auto;
+    
 }
 
 .nav-skb h4{
@@ -24,10 +25,12 @@
     flex-direction: row;
     margin: 10px 20px 10px 10px;
     font-weight: 200;
+    border:0.1px solid rgb(207, 204, 204);
+    border-radius: 5px;
 }
 
 .nav-skb_child >div{
-    border: 0.2px solid #253858CC;
+    border:0.1px solid rgb(207, 204, 204);
     padding: 10px 30px;
     border-radius: 5px;
     color: black;
@@ -36,19 +39,24 @@
 }
 
 .nav-skb_child1>a{
-    border: 0.1px solid #253858CC;
+    /* border: 0.1px solid #253858CC; */
     padding: 10px 30px;
     border-radius: 5px;
     color: black;
-    background-color: blue;
+  
     text-decoration: none;
-
+  
 }
 
-/* .nav-skb_child1>a:nth-child(1)
+.nav-skb_child1>a:nth-child(1)
 {
     border-right: none;
-} */
+}
+
+.nav-skb_child1>a:nth-child(2)
+{
+    border-left: none;
+}
 
 
 
@@ -56,17 +64,12 @@
     background-color: white;
     color: blue;
     cursor: pointer;
+    box-shadow: 0px 6px 16px #3469cb29;
+    scale: 1.5px;
     
 }
 
-/* .nav-skb_child1 a:hover{
-    background-color: white;
-    color: #0065FF;
-    scale: 3px;
-    box-shadow: 0px 6px 16px #3469cb29;
-    border: none;
-    cursor: pointer;
-} */
+
 
 
 .nav-skb_child select{

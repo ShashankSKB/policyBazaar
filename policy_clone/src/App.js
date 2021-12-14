@@ -3,11 +3,11 @@ import './App.css';
 import { Plan } from './components/plansPage/plan';
 import { PlanLayout } from './components/plansPage/planPageLayout';
 import { Nav } from './components/plansPage/plansBar';
-import { Temp } from './components/plansPage/samp';
+import { Top } from './components/plansPage/topComp';
 function App() {
   return (
     <div className="App">
-   <PlanLayout></PlanLayout>
+      <PlanLayout></PlanLayout>
     </div>
   );
 }

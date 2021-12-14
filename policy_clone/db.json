@@ -1,0 +1,35 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/Bajaj_Allianz.gif",
+      "type": "Regular Third Party Only",
+      "price":752
+    },
+    {
+      "id": 2,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/SBI.gif",
+      "type": "Limited Third Party Only",
+      "price":752
+    },
+    {
+      "id": 3,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/EdelweissTP.gif",
+      "type": "Regular Third Party Only",
+      "price":752
+    },
+    {
+      "id": 4,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/IFFCOTOKIO.gif",
+      "type": "Limited Third Party Only ",
+      "price":752
+    },
+    {
+      "id": 5,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/CholaMandalam.gif",
+      "type": "Regular Third Party Only",
+      "price":752
+    }
+  ]
+  
+}

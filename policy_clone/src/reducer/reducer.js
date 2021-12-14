@@ -1,4 +1,4 @@
-import { ADD_PLAN } from "./actionTypes"
+import { ADD_PLAN, GET_PLANS } from "./actionTypes"
 
 const initstate={
     plans:{
@@ -17,6 +17,13 @@ export const reducer=(state=initstate,action)=>{
             return {
                 ...state,
                 data:[...state,action.payload]
+            }
+        }
+
+        case GET_PLANS:{
+            return {
+                ...state,
+                data:action.payload
             }
         }
 

@@ -1,9 +1,0 @@
-.check>a {
-    background-color: blue;
-    color: white;
-    border:1px solid black
-}
-
-.check>a:focus{
-    background-color: white;
-}

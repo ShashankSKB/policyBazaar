@@ -3,6 +3,11 @@ import Grid from '@mui/material/Grid';
 import { Plan } from './plan';
 import { makeStyles } from '@mui/styles';
 import { Nav } from './plansBar';
+import { Top } from './topComp';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { get_plans } from '../../reducer/action';
+const axios = require('axios');
 const useStyles = makeStyles({
     root: {
     //   backgroundColor: 'red',
@@ -12,9 +17,15 @@ const useStyles = makeStyles({
     },
     title:{
         textAlign:'left',
-        // marginLeft:"90px",
+        // marginLeft:"100px",
         fontFamily: 'Merriweather',
         color: "#253858",
+        padding: "0px 35px",
+
+    },
+    exclusive:{
+        color:"red",
+        fontSize:"10px",
 
     }
   });
@@ -23,18 +34,49 @@ function PlanLayout()
 {
     const classes = useStyles();
 
+
+    const dispatch=useDispatch();
+    
+    const temp=useSelector(state=>state.data)
+    
+    useEffect(()=>{
+        getData();
+    },[]);
+
+    const getData=async()=>{
+        const {data}=await axios.get('http://localhost:3004/plans')
+        console.log("success :",data)
+        
+        dispatch(get_plans(data))
+        
+
+    }
+
+    console.log("after dispatch",temp)
+
+  
+
     return (
         <div>
            <Grid container spacing={2}>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     <Typography >policy bazaar</Typography>
                 </Grid>
 
-                <Grid item xs={8} className={classes.root}>
-                    <Nav></Nav>
+                <Grid item xs={9} className={classes.root}>
+                    <Top></Top>
+                <Nav></Nav>
+
                 <Typography className={classes.title} variant="h5">13 Third Party Plans For You</Typography>
+                
+                {temp.map((e)=>(
+                    <Plan imageSrc={e.companyIcon} plantype={e.type} price={`RS .${e.price}`}></Plan>
+                ))}
+                
+                
                 <Plan imageSrc="https://static.pbcdn.in/twowheeler-cdn/InsurerImages/Bajaj_Allianz.gif" plantype="Regular Third Party Only" price="RS.  725" ></Plan>
                 <Plan imageSrc="https://static.pbcdn.in/twowheeler-cdn/InsurerImages/Bajaj_Allianz.gif" plantype="Regular Third Party Only" price="RS.  725" ></Plan>
+                <Typography className={classes.exclusive} variant="h9">*Above mentioned quotes are exclusive of GST</Typography>
                 </Grid>
            </Grid>
         </div>
