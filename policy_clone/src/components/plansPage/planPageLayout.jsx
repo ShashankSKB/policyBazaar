@@ -7,6 +7,7 @@ import { Top } from './topComp';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { get_plans } from '../../reducer/action';
+import { useState } from 'react';
 const axios = require('axios');
 const useStyles = makeStyles({
     root: {
@@ -34,6 +35,7 @@ function PlanLayout()
 {
     const classes = useStyles();
 
+    const [loading,setLoading]=useState(false);
 
     const dispatch=useDispatch();
     
@@ -48,6 +50,8 @@ function PlanLayout()
         console.log("success :",data)
         
         dispatch(get_plans(data))
+
+        setLoading(true)
         
 
     }
@@ -56,7 +60,7 @@ function PlanLayout()
 
   
 
-    return (
+    return loading ? (
         <div>
            <Grid container spacing={2}>
                 <Grid item xs={3}>
@@ -70,7 +74,7 @@ function PlanLayout()
                 <Typography className={classes.title} variant="h5">13 Third Party Plans For You</Typography>
                 
                 {temp.map((e)=>(
-                    <Plan imageSrc={e.companyIcon} plantype={e.type} price={`RS .${e.price}`}></Plan>
+                    <Plan imageSrc={e.companyIcon} plantype={e.type} price={`RS .${e.price}`} ></Plan>
                 ))}
                 
                 
@@ -79,6 +83,10 @@ function PlanLayout()
                 <Typography className={classes.exclusive} variant="h9">*Above mentioned quotes are exclusive of GST</Typography>
                 </Grid>
            </Grid>
+        </div>
+    ) :(
+        <div>
+            loading...
         </div>
     )
 }

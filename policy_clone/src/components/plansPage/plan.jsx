@@ -5,7 +5,7 @@ function Plan({imageSrc,plantype,price})
 {
     const plans=useSelector(store=>store)
 
-
+    console.log(plans)
 
     return (
      
