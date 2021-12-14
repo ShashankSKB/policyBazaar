@@ -1,0 +1,43 @@
+
+.nav-skb{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #253858CC; */
+    justify-content: center;
+
+}
+
+.nav-skb h4{
+    margin: 0px;
+    font-weight: 300;
+}
+
+.nav-skb_child {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 10px 10px;
+    font-weight: 200;
+}
+
+.nav-skb_child >div{
+    border: 0.2px solid #253858CC;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: black;
+ 
+
+}
+.nav-skb_child :focus{
+    
+    color: blue;
+    scale: 1.5px;
+ 
+
+}
+
+
+.nav-skb_child select{
+    outline: none;
+    border: none;
+    color: #253858CC;
+}
