@@ -4,9 +4,11 @@ function Nav()
 
     return (
         <div className="nav-skb">
-            <div className="nav-skb_child">
-                <div><h4>Comprehensive Cover</h4></div>
-                <div><h4>Third Party Only Cover</h4></div>
+            <div className="nav-skb_child1">
+                {/* <div><h4>Comprehensive Cover</h4></div>
+                <div><h4>Third Party Only Cover</h4></div> */}
+                <a href="#">Comprehensive Cover</a>
+                <a href="#">Comprehensive Cover</a>
             </div>
             <div className="nav-skb_child">
                 <div >Plan Tenure :

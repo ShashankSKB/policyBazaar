@@ -19,6 +19,13 @@
     font-weight: 200;
 }
 
+.nav-skb_child1 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 10px 10px;
+    font-weight: 200;
+}
+
 .nav-skb_child >div{
     border: 0.2px solid #253858CC;
     padding: 10px 30px;
@@ -27,13 +34,39 @@
  
 
 }
-.nav-skb_child :focus{
-    
-    color: blue;
-    scale: 1.5px;
- 
+
+.nav-skb_child1>a{
+    border: 0.1px solid #253858CC;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: black;
+    background-color: blue;
+    text-decoration: none;
 
 }
+
+/* .nav-skb_child1>a:nth-child(1)
+{
+    border-right: none;
+} */
+
+
+
+.nav-skb_child1>a:focus{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    
+}
+
+/* .nav-skb_child1 a:hover{
+    background-color: white;
+    color: #0065FF;
+    scale: 3px;
+    box-shadow: 0px 6px 16px #3469cb29;
+    border: none;
+    cursor: pointer;
+} */
 
 
 .nav-skb_child select{
