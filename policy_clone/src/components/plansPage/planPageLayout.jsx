@@ -1,3 +1,4 @@
+import "./planpagelayout.css"
 import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { Plan } from './plan';
@@ -8,13 +9,17 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { get_plans } from '../../reducer/action';
 import { useState } from 'react';
+import { WheelerBox } from './wheelerDetails';
+import { SideCard } from "./sidecard";
+
 const axios = require('axios');
+
 const useStyles = makeStyles({
     root: {
     //   backgroundColor: 'red',
       color: (props) => props.color,
       
-      border:" 1px solid black"
+     
     },
     title:{
         textAlign:'left',
@@ -28,6 +33,9 @@ const useStyles = makeStyles({
         color:"red",
         fontSize:"10px",
 
+    },
+    sidebox:{
+        backgroundColor:"#F2F7FF"
     }
   });
 
@@ -62,9 +70,12 @@ function PlanLayout()
 
     return loading ? (
         <div>
-           <Grid container spacing={2}>
-                <Grid item xs={3}>
-                    <Typography >policy bazaar</Typography>
+           <Grid container spacing={2} >
+                <Grid item xs={3} className={classes.sidebox}>
+      
+                    <div className="logo"><img src="https://twowheeler.policybazaar.com/images/PB-logo.svg"></img></div>
+                    <WheelerBox></WheelerBox>
+                    <SideCard></SideCard>
                 </Grid>
 
                 <Grid item xs={9} className={classes.root}>

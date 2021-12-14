@@ -8,7 +8,7 @@ function Nav()
                 {/* <div><h4>Comprehensive Cover</h4></div>
                 <div><h4>Third Party Only Cover</h4></div> */}
                 <a href="#">Comprehensive Cover</a>
-                <a href="#">Comprehensive Cover</a>
+                <a href="#">Third Party Only Cover</a>
             </div>
             <div className="nav-skb_child">
                 <div >Plan Tenure :

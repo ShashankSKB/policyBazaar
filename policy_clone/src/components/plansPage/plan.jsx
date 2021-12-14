@@ -15,6 +15,7 @@ function Plan({imageSrc,plantype,price,data})
 
         dispatch(set_plan(data))
         console.log(plans)
+        alert("plan added",data)
     }
     return (
      
