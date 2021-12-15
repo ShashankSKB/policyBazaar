@@ -1,0 +1,12 @@
+.gridparent-skb{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px 30px 20px 30px;
+}
+
+.gridparent-skb label{
+    margin: 0px;
+}

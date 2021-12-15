@@ -6,10 +6,11 @@ import { Nav } from './components/plansPage/plansBar';
 import { Top } from './components/plansPage/topComp';
 import { WheelerBox } from './components/plansPage/wheelerDetails';
 import { SideCard } from './components/plansPage/sidecard';
+import { Proposal1 } from './components/proposols/proposal1';
 function App() {
   return (
     <div className="App">
-      <PlanLayout></PlanLayout>
+      <Proposal1></Proposal1>
     </div>
   );
 }
