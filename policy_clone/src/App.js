@@ -7,10 +7,12 @@ import { Top } from './components/plansPage/topComp';
 import { WheelerBox } from './components/plansPage/wheelerDetails';
 import { SideCard } from './components/plansPage/sidecard';
 import { Proposal1 } from './components/proposols/proposal1';
+import { Prop1side } from './components/proposols/prop1Side';
+import { PropLayout1 } from './components/proposols/prop1layout';
 function App() {
   return (
     <div className="App">
-      <Proposal1></Proposal1>
+      <PropLayout1></PropLayout1>
     </div>
   );
 }

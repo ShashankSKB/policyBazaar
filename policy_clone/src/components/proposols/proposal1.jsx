@@ -148,7 +148,7 @@ function Proposal1()
              <Grid container spacing={2} >
 
              <Grid item xs={6} md={3}>
-             <Inputselectbox width={220} label="Title" value1="Mr" value2="Ms" ></Inputselectbox>
+             <Inputselectbox width={160} label="Title" value1="Mr" value2="Ms" ></Inputselectbox>
              </Grid>
              
             <Grid item xs={6} md={9} >
@@ -234,7 +234,7 @@ function Proposal1()
              </Grid>
 
 
-            <input type="submit" className='submitButton-skb' value="Continue to step 2"></input>
+            <input type="submit" className='submitButton-skb' value="Continue to step 2  >>"></input>
             
              </form>
 
