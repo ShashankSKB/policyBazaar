@@ -1,7 +1,17 @@
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-function NormalText()
+import { useState } from 'react';
+
+const MAX_LENGTH = 10;
+function NormalText({label,fieldname})
 {
+    
+    const [owner,setOwner]=useState("");
+
+    const handleChange=(e)=>{
+
+        console.log(e.target.value)
+    }
 
     return (
         <div>
@@ -15,10 +25,16 @@ function NormalText()
 <Box
       sx={{
         // width: 500,
-        maxWidth: '98%',
+        // maxWidth: '98%',
       }}
     >
-      <TextField fullWidth label="fullWidth" id="fullWidth" />
+      <TextField
+       id="fullWidth" 
+       error={fieldname >= MAX_LENGTH}
+       fullWidth label={label} 
+       
+      
+       />
     </Box>
         </div>
     ) 

@@ -4,7 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import * as React from 'react';
-function Inputselectbox({width})
+function Inputselectbox({width,value1,value2,value3,label})
 {
 
     const [age, setAge] = React.useState('');
@@ -17,20 +17,20 @@ function Inputselectbox({width})
     return (
         <div>
             <FormControl sx={{ m: 0, minWidth: {width} }} >
-        <InputLabel id="demo-simple-select-disabled-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-disabled-label">{label}</InputLabel>
         <Select
           labelId="demo-simple-select-disabled-label"
           id="demo-simple-select-disabled"
           value={age}
-          label="Age"
+          label={label}
           onChange={handleChange2}
         >
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={value1}>{value1}</MenuItem>
+          <MenuItem value={value2}>{value2}</MenuItem>
+          <MenuItem value={value3}>{value3}</MenuItem>
         </Select>
         {/* <FormHelperText>Disabled</FormHelperText> */}
       </FormControl>
