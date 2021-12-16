@@ -15,7 +15,7 @@ import { PropLayout2 } from './components/proposols/step2/prop2layout';
 function App() {
   return (
     <div className="App">
-      {/* <Switch >
+      <Switch >
       <Route path="/" exact>
         <PlanLayout/>
       </Route>
@@ -23,8 +23,12 @@ function App() {
       <Route path="/step1" exact>
         <PropLayout1/>
       </Route>
-      </Switch> */}
+
+      <Route path="/step2" exact>
       <PropLayout2/>
+      </Route>
+      </Switch>
+      
     </div>
   );
 }

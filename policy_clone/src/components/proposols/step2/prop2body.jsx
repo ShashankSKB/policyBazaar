@@ -7,9 +7,9 @@ import * as React from 'react';
 import "../step1/proposol.css"
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
-
+import { useHistory } from 'react-router-dom';
 function Proposal2()
-{
+{  const history=useHistory()
     const [Nname,setNname]=useState("");
     const [Nage,setNage]=useState("");
     
@@ -63,6 +63,7 @@ function Proposal2()
         if(Nname&&Nage!= "")
         {
             console.log("proceed")
+            history.push("/step2")
         }
     }
     

@@ -7,9 +7,11 @@ import * as React from 'react';
 import "./proposol.css";
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 function Proposal1()
 {
+    const history=useHistory()
     const [owner,setOwner]=useState("");
     const [mobile,setMobile]=useState("");
     const [email,setEmail]=useState("");
@@ -132,6 +134,7 @@ function Proposal1()
         if(owner&&mobile&&email&&address&&city&&state&&pincode != "")
         {
             console.log("proceed")
+            history.push("/step2")
         }
     }
     
