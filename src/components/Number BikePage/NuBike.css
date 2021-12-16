@@ -18,8 +18,12 @@
     /* position: absolute; */
 }
 .bikeno-img-i-r{
-    padding: 1% 15%;
+    padding: 1% 7%;
     width: 39%;
+}
+.bikeno-img-aki-r{
+    width: 57%;
+    padding: 3% 21%;
 }
 .bikeno-inpt-r{
     width: 55%;

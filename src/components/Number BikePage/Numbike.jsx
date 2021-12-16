@@ -9,13 +9,16 @@ export default function Numbike(){
     const [fieldflag,setFieldflag]=useState(false)
     const dispatch=useDispatch()
     const history=useHistory()
-    const isbikeno=useSelector(state=>state.bikenumber.isbikeno)
+    const isbikeno=useSelector(state=>state.vehicledetail.isbikeno)
     return(
         <div className="container-r">
             <div className="bikeno-conti-r">
                 <div className="bikeno-img-r">
                     <img className="bikeno-img-i-r" src="./Images/numBike/Logo (1).svg" alt="" />
+                    {/* <img className="bikeno-img-aki-r" src="./Images/numBike/image 2.svg" alt="" /> */}
+                    <img className="bikeno-img-aki-r" src="https://static.pbcdn.in/cdn/images/home-v1/pb-promise-new.png" alt="" />
                 </div>
+                
                 <div className="bikeno-inpt-r">
                         <div>
                             <p className="bikeno-head_r">
