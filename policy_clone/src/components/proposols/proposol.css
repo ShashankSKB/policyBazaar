@@ -10,3 +10,24 @@
 .gridparent-skb label{
     margin: 0px;
 }
+
+.step1-header-skb{
+    background-color: #253858;
+    padding: 16px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.submitButton-skb{
+    background-color: #62AF60;
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 13px;
+    border-radius: 4px;
+    margin: 20px auto;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}

@@ -141,7 +141,9 @@ function Proposal1()
     return (
         <div className='gridparent-skb'>
             <form onSubmit={(e)=>handlesubmit(e)}>
-
+            <div className='step1-header-skb'>
+                <p>Proposal step 1/3</p>
+            </div>
             
              <Grid container spacing={2} >
 
@@ -167,6 +169,7 @@ function Proposal1()
                 fullWidth label="Mobile Number"
                 name='Mobile'
                 onChange={(e)=>handleChange(e)}
+                type="number"
                 // helperText={errorMessage}
                 />
             </Grid>
@@ -178,6 +181,7 @@ function Proposal1()
                 fullWidth label="Email"
                 name='Email'
                 onChange={(e)=>handleChange(e)}
+                type="email"
                 // helperText={errorMessage}
                 />
             </Grid>
@@ -188,6 +192,7 @@ function Proposal1()
                 fullWidth label="Address"
                 name='Address'
                 onChange={(e)=>handleChange(e)}
+                type="text"
                 // helperText={errorMessage}
                 />
             </Grid>
@@ -222,13 +227,14 @@ function Proposal1()
                 fullWidth label="Pincode"
                 name='Pincode'
                 onChange={(e)=>handleChange(e)}
+                type="number"
                 // helperText={errorMessage}
                 />
             </Grid>
              </Grid>
 
 
-            <input type="submit"></input>
+            <input type="submit" className='submitButton-skb' value="Continue to step 2"></input>
             
              </form>
 
