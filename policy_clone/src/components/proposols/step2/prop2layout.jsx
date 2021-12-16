@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Grid';
-import { Prop1side } from './prop1Side';
-import { Proposal1 } from './proposal1';
+import { Proposal2 } from './prop2body';
+import { Prop2side } from './prop2side';
 import { Top } from '../../plansPage/topComp';
-function PropLayout1()
+function PropLayout2()
 {
 
 
@@ -11,15 +11,15 @@ function PropLayout1()
             <Grid container spacing={2} >
             <Grid item md={3} >
             <div className="logo" style={{marginBottom:"45px"}}><img src="https://twowheeler.policybazaar.com/images/PB-logo.svg"></img></div>
-                <Prop1side></Prop1side>
+                <Prop2side></Prop2side>
             </Grid>
             <Grid item md={9}>
                 <Top ></Top>
-                <Proposal1></Proposal1>
+                <Proposal2></Proposal2>
             </Grid>
             </Grid>
         </div>
     )
 }
 
-export {PropLayout1} 
+export {PropLayout2} 

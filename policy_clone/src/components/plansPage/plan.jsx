@@ -2,10 +2,12 @@ import { useDispatch, useSelector } from "react-redux"
 import "./plan.css"
 import { Typography } from '@mui/material';
 import { set_plan } from "../../reducer/action";
+import { Redirect } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 function Plan({imageSrc,plantype,price,data})
 {
     const plans=useSelector(store=>store)
-
+    const history=useHistory()
     const dispatch=useDispatch();
     console.log(plans)
 
@@ -15,7 +17,11 @@ function Plan({imageSrc,plantype,price,data})
 
         dispatch(set_plan(data))
         console.log(plans)
-        alert("plan added",data)
+        
+        history.push("/step1")
+           
+        
+        
     }
     return (
      

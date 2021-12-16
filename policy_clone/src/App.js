@@ -9,10 +9,22 @@ import { SideCard } from './components/plansPage/sidecard';
 import { Proposal1 } from './components/proposols/step1/proposal1';
 import { Prop1side } from './components/proposols/step1/prop1Side';
 import { PropLayout1 } from './components/proposols/step1/prop1layout';
+import {Switch ,Route ,Link} from 'react-router-dom';
+import { Proposal2 } from './components/proposols/step2/prop2body';
+import { PropLayout2 } from './components/proposols/step2/prop2layout';
 function App() {
   return (
     <div className="App">
-      <PropLayout1></PropLayout1>
+      {/* <Switch >
+      <Route path="/" exact>
+        <PlanLayout/>
+      </Route>
+
+      <Route path="/step1" exact>
+        <PropLayout1/>
+      </Route>
+      </Switch> */}
+      <PropLayout2/>
     </div>
   );
 }
