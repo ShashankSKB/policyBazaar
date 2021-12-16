@@ -10,12 +10,54 @@ import { useState } from 'react';
 function Proposal1()
 {
     const [owner,setOwner]=useState("");
-    const [errorMessage,setErrorMessage]=useState("")
+    const [mobile,setMobile]=useState("");
+    const [email,setEmail]=useState("");
+    const [address,setAddress]=useState("");
+    const [city,setCity]=useState("");
+    const [state,setState]=useState("");
+    const [pincode,setPincode]=useState("");
+    const [errorMessageOwner,setErrorMessageOwner]=useState("")
+    const [errorMessageMobile,setErrorMessageMobile]=useState("")
+    const [errorMessageEmail,setErrorMessageEmail]=useState("")
+    const [errorMessageAddress,setErrorMessageAddress]=useState("")
+    const [errorMessageCity,setErrorMessageCity]=useState("")
+    const [errorMessageState,setErrorMessageState]=useState("")
+    const [errorMessagePincode,setErrorMessagePincode]=useState("")
     
-
+    
     const handleChange=(e)=>{
         console.log(e.target.value,e.target.name)
-        setOwner(e.target.value);
+        if(e.target.name=="Owner")
+        {
+            setOwner(e.target.value);
+        }
+        if(e.target.name=="Mobile")
+        {
+            setMobile(e.target.value);
+        }
+        if(e.target.name=="Email")
+        {
+            setEmail(e.target.value);
+        }
+        if(e.target.name=="Address")
+        {
+            setAddress(e.target.value);
+        }
+        if(e.target.name=="City")
+        {
+            setCity(e.target.value);
+        }
+        if(e.target.name=="State")
+        {
+            setState(e.target.value);
+        }
+        if(e.target.name=="Pincode")
+        {
+            setPincode(e.target.value);
+        }
+
+
+        
     }
 
     const handlesubmit=(e)=>{
@@ -23,23 +65,77 @@ function Proposal1()
         e.preventDefault();
         if(owner=="")
         {
-            setErrorMessage("error")
-            console.log("errorMessage",errorMessage)
+            setErrorMessageOwner("error")
+            console.log("errorMessage",errorMessageOwner)
         }
         else{
-            setErrorMessage("")
+            setErrorMessageOwner("")
+        }
+
+        if(mobile=="")
+        {
+            setErrorMessageMobile("error")
+        }
+        else{
+           
+            setErrorMessageMobile("")
+        }
+
+        if(email=="")
+        {
+            setErrorMessageEmail("error")
+        }
+        else{
+           
+            setErrorMessageEmail("")
+        }
+
+        if(address=="")
+        {
+            setErrorMessageAddress("error")
+        }
+        else{
+           
+            setErrorMessageAddress("")
+        }
+
+        if(city=="")
+        {
+            setErrorMessageCity("error")
+        }
+        else{
+           
+            setErrorMessageCity("")
+        }
+
+
+        if(state=="")
+        {
+            setErrorMessageState("error")
+        }
+        else{
+           
+            setErrorMessageState("")
+        }
+
+        
+        if(pincode=="")
+        {
+            setErrorMessagePincode("error")
+        }
+        else{
+           
+            setErrorMessagePincode("")
+        }
+
+        if(owner&&mobile&&email&&address&&city&&state&&pincode != "")
+        {
+            console.log("proceed")
         }
     }
     
 
-    // React.useEffect(() => {
-    //     // Set empty erroMessage only if text is less than MAX_LENGTH
-    //     // and errorMessage is not empty.
-    //     // avoids setting empty errorMessage if the errorMessage is already empty
-    //     if ( errorMessage=="error") {
-    //       setErrorMessage("");
-    //     }
-    //   }, [owner, errorMessage]);
+    
 
 
     return (
@@ -55,37 +151,79 @@ function Proposal1()
              
             <Grid item xs={6} md={9} >
              <TextField
-             error={errorMessage == "error"}
+             error={errorMessageOwner == "error"}
                 id="fullWidth" 
                 fullWidth label="vehicle owner"
                 name='Owner'
                 onChange={(e)=>handleChange(e)}
-                // helperText={errorMessage}
+                // helperText="Mandatory"
                 />
             </Grid>
             
             <Grid item xs={6} md={12} >
-            <NormalText label="Mobile Number *"></NormalText>
+            <TextField
+             error={errorMessageMobile == "error"}
+                id="fullWidth" 
+                fullWidth label="Mobile Number"
+                name='Mobile'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
             </Grid>
 
             <Grid item xs={6} md={12} >
-            <NormalText label="Email id*"></NormalText>
+            <TextField
+             error={errorMessageEmail == "error"}
+                id="fullWidth" 
+                fullWidth label="Email"
+                name='Email'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
             </Grid>
             <Grid item xs={6} md={12} >
-            <NormalText label="Communication address*"></NormalText>
+            <TextField
+             error={errorMessageAddress == "error"}
+                id="fullWidth" 
+                fullWidth label="Address"
+                name='Address'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
             </Grid>
 
             
             <Grid item xs={6} md={6}>
-             <Inputselectbox  width={465} label="City/District"></Inputselectbox>
+            <TextField
+             error={errorMessageCity == "error"}
+                id="fullWidth" 
+                fullWidth label="City/District"
+                name='City'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
              </Grid>
             <Grid item xs={6} md={6} >
-            <NormalText label="State*"></NormalText>
+            <TextField
+             error={errorMessageState == "error"}
+                id="fullWidth" 
+                fullWidth label="State"
+                name='State'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
             </Grid>
            
             
             <Grid item xs={6} md={12} >
-            <NormalText label="Pincode*"></NormalText>
+            <TextField
+             error={errorMessagePincode == "error"}
+                id="fullWidth" 
+                fullWidth label="Pincode"
+                name='Pincode'
+                onChange={(e)=>handleChange(e)}
+                // helperText={errorMessage}
+                />
             </Grid>
              </Grid>
 
