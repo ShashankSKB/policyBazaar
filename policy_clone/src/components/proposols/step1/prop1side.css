@@ -23,12 +23,12 @@
 
 .prop1parent-skb-child :nth-child(1){
     padding: 4px 30px;
-   
+    background-color: #FFFFFF;
 }
 
-.prop1parent-skb-child >div:nth-child(2)
+.prop1parent-skb-child-grey
 {
-    background-color:#F5F5F5;
+    /* background-color:gray; */
     
 }
 

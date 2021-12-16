@@ -19,7 +19,7 @@ function Prop1side()
                     <p>IDV:N/A</p>
                     <p>NCB:N/A</p>
                  </div>
-                <div>
+                <div className="prop1parent-skb-child-grey">
                     <p>Zero Deprecation : N/A</p>
                 </div>
             </div>

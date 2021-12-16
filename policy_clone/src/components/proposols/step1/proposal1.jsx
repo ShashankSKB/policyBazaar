@@ -1,6 +1,7 @@
-import { Inputselectbox } from '../util/selectbox';
-import { NormalText } from '../util/normaltext';
-import { Inputerror } from '../util/inputerror';
+import { Inputselectbox } from '../../util/selectbox';
+
+import { Inputerror } from '../../util/inputerror';
+import { NormalText } from '../../util/normaltext';
 import Grid from '@mui/material/Grid';
 import * as React from 'react';
 import "./proposol.css";
