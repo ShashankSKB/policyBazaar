@@ -4,6 +4,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import po2 from "../../images/po2.webp"
 import po1 from "../../images/po1.webp"
+import virs from "../../images/virs.png"
+import hert from "../../images/hert.png"
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -21,7 +23,6 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-
 export const  Caus=() =>{
   return (
     <div className="App">
@@ -32,8 +33,6 @@ export const  Caus=() =>{
   responsive={responsive}
   ssr={false} // means to render carousel on server-side.
   infinite={true}
- 
-  //autoPlay={this.props.deviceType !== "mobile" ? true : false}
   autoPlaySpeed={1000}
   keyBoardControl={false}
   customTransition="all .5"
@@ -42,27 +41,43 @@ export const  Caus=() =>{
   removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
   //deviceType={this.props.deviceType}
   dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-30-px"
+  itemClass="carousel-item-padding-40-px"
   style={{width:"80%"}}
 >
-<div style={{marginLeft:"8%",position:"absolute",marginRight:"5%"}}>
+<div style={{marginLeft:"9%",position:"absolute",marginRight:"10%"}}>
+<img style={{position:"absolute",marginTop:"10%",marginLeft:"6%"}} src={hert} alt="heart"/>
+<p style={{position:"absolute",color:"white",fontSize:"10px",fontWeight:"500",marginTop:"15%",marginLeft:"5%"}}>Health Insurance</p>
+ <p style={{position: "absolute",marginTop:"25%",fontSize:"22px",width:"200px",color:"white",fontWeight:"500",marginLeft:"5%",fontFamily:"Roboto"}}>Protect  yourself & your family against Covid-19</p>
+ <img style={{position:"absolute",marginLeft:"80%",marginTop:"5%"}} src={virs} alt="virus"/>
  <img src={po2}  style={{backgroundColor:"#7080FA",width:"368px",height:"200px",borderRadius:"15px"}} alt="blue" />
- <p>Protect  yourself & your family against Covid-19</p>
- 4
+
+ 
 </div>
-<div style={{marginLeft:"8%",position:"absolute"}}>
+<div style={{marginLeft:"10%",position:"absolute"}}>
+<img style={{position:"absolute",marginTop:"10%",marginLeft:"6%"}} src={hert} alt="heart"/>
+<p style={{position:"absolute",color:"white",fontSize:"10px",fontWeight:"500",marginTop:"15%",marginLeft:"5%"}}>Health Insurance</p>
+ <p style={{position: "absolute",marginTop:"25%",fontSize:"22px",width:"200px",color:"white",fontWeight:"500",marginLeft:"5%",fontFamily:"Roboto"}}>Invest 5k per month & get 63.4L in return# </p>
+ <img style={{position:"absolute",marginLeft:"80%",marginTop:"5%"}} src={virs} alt="virus"/>
  <img src={po1}  style={{backgroundColor:"#4FDC95",width:"368px",height:"200px",borderRadius:"15px",marginRight:"2%"}} alt="blue" />
- 3
+ 
 </div>
-<div style={{marginLeft:"8%",position:"absolute"}}>
+<div style={{marginLeft:"10%",position:"absolute"}}>
+<img style={{position:"absolute",marginTop:"10%",marginLeft:"6%"}} src={hert} alt="heart"/>
+<p style={{position:"absolute",color:"white",fontSize:"10px",fontWeight:"500",marginTop:"15%",marginLeft:"5%"}}>Health Insurance</p>
+ <p style={{position: "absolute",marginTop:"25%",fontSize:"22px",width:"200px",color:"white",fontWeight:"500",marginLeft:"5%",fontFamily:"Roboto"}}>50L cover for your home & 20L cover for household goods          </p>
+ <img style={{position:"absolute",marginLeft:"80%",marginTop:"5%"}} src={virs} alt="virus"/>
  <img src={po2}  style={{backgroundColor:"#3CBBDA",width:"368px",height:"200px",borderRadius:"15px"}} alt="blue" />
- 2
+ 
 </div>
-<div style={{marginRight:"8%",marginLeft:"8%"}}>
+<div style={{marginRight:"14%",marginLeft:"10%"}}>
+<img style={{position:"absolute",marginTop:"10%",marginLeft:"6%"}} src={hert} alt="heart"/>
+<p style={{position:"absolute",color:"white",fontSize:"10px",fontWeight:"500",marginTop:"15%",marginLeft:"5%"}}>Health Insurance</p>
+ <p style={{position: "absolute",marginTop:"25%",fontSize:"22px",width:"200px",color:"white",fontWeight:"500",marginLeft:"5%",fontFamily:"Roboto"}}>Protect  yourself & your family against Covid-19</p>
+ <img style={{position:"absolute",marginLeft:"80%",marginTop:"5%"}} src={virs} alt="virus"/>
  <img src={po2}  style={{backgroundColor:"#FF9898",width:"368px",height:"200px",borderRadius:"15px"}} alt="blue" />
  
 </div>
-</Carousel>;
+</Carousel>
 
 
     </div>
