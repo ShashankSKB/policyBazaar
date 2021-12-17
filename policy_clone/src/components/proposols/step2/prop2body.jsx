@@ -8,6 +8,7 @@ import "../step1/proposol.css"
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+const axios = require('axios');
 function Proposal2()
 {  const history=useHistory()
     const [Nname,setNname]=useState("");
@@ -17,7 +18,11 @@ function Proposal2()
     const [errorMessageNname,setErrorMessageNname]=useState("")
     const [errorMessageNage,setErrorMessageNage]=useState("")
     
-    
+    const [info2,setInfo2]=useState({
+        Nname:"",
+        Nage:""
+
+})
     
     
     const handleChange=(e)=>{
@@ -30,7 +35,11 @@ function Proposal2()
         {
             setNage(e.target.value);
         }
-       
+        
+        setInfo2({
+            ...info2,
+            [e.target.name]:e.target.value
+        })
 
 
         
@@ -63,6 +72,21 @@ function Proposal2()
         if(Nname&&Nage!= "")
         {
             console.log("proceed")
+
+            const postinfo=async()=>{
+                
+                try{
+                    const {data}=await axios.post('http://localhost:3004/info2', info2)
+                }
+                catch(err)
+                {
+                    console.log("error",err);
+
+                }
+                
+            }
+
+            postinfo();
             history.push("/step3")
         }
     }

@@ -8,6 +8,7 @@ import "../step1/proposol.css"
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+const axios = require('axios');
 function Proposal3()
 {  const history=useHistory()
     const [engine,setEngine]=useState("");
@@ -18,7 +19,13 @@ function Proposal3()
     const [errorMessageChasis,setErrorMessageChasis]=useState("")
     
     
-    
+    const [info3,setInfo3]=useState({
+        Nname:"",
+        Nage:"",
+        date:"12/04/2021",
+        registration:"AJ-9903"
+
+})
     
     const handleChange=(e)=>{
         console.log(e.target.value,e.target.name)
@@ -30,7 +37,10 @@ function Proposal3()
         {
             setChasis(e.target.value);
         }
-       
+        setInfo3({
+            ...info3,
+            [e.target.name]:e.target.value
+        })
 
 
         
@@ -63,6 +73,21 @@ function Proposal3()
         if(engine&&chasis!= "")
         {
             console.log("proceed")
+            
+            const postinfo=async()=>{
+                
+                try{
+                    const {data}=await axios.post('http://localhost:3004/info3', info3)
+                }
+                catch(err)
+                {
+                    console.log("error",err);
+
+                }
+                
+            }
+
+            postinfo();
             history.push("/bill")
         }
     }

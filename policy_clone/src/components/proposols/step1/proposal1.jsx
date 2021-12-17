@@ -8,7 +8,8 @@ import "./proposol.css";
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
+import { useDispatch, useSelector } from "react-redux";
+const axios = require('axios');
 function Proposal1()
 {
     const history=useHistory()
@@ -26,7 +27,20 @@ function Proposal1()
     const [errorMessageCity,setErrorMessageCity]=useState("")
     const [errorMessageState,setErrorMessageState]=useState("")
     const [errorMessagePincode,setErrorMessagePincode]=useState("")
-    
+
+    const [info1,setInfo1]=useState({
+            Owner:"",
+            Mobile:"",
+            Email:"",
+            Address:"",
+            City:"",
+            State:"",
+            Pincode:"",
+
+    })
+
+    const store=useSelector(state=>state);
+    console.log("info store",store);
     
     const handleChange=(e)=>{
         console.log(e.target.value,e.target.name)
@@ -59,6 +73,12 @@ function Proposal1()
             setPincode(e.target.value);
         }
 
+        setInfo1({...info1,
+            [e.target.name]:e.target.value
+        })
+          
+        console.log(info1);
+        
 
         
     }
@@ -134,6 +154,23 @@ function Proposal1()
         if(owner&&mobile&&email&&address&&city&&state&&pincode != "")
         {
             console.log("proceed")
+            
+            const postinfo=async()=>{
+                
+                try{
+                    const {data}=await axios.post('http://localhost:3004/info1', info1)
+                }
+                catch(err)
+                {
+                    console.log("error",err);
+
+                }
+                
+            }
+
+            postinfo();
+
+            
             history.push("/step2")
         }
     }

@@ -1,10 +1,11 @@
-import { ADD_PLAN, GET_PLANS, SET_PLAN } from "./actionTypes"
+import { ADD_PLAN, GET_PLANS, SET_INFO, SET_PLAN } from "./actionTypes"
 
 const initstate={
     plans:{
         loading:true,
         data:[],
         choice:{},
+        
         error:false
     }
 }
@@ -35,6 +36,8 @@ export const reducer=(state=initstate,action)=>{
                 choice:action.payload
             }
         }
+
+        
 
 
         
