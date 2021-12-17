@@ -12,6 +12,8 @@ import { PropLayout1 } from './components/proposols/step1/prop1layout';
 import {Switch ,Route ,Link} from 'react-router-dom';
 import { Proposal2 } from './components/proposols/step2/prop2body';
 import { PropLayout2 } from './components/proposols/step2/prop2layout';
+import { Proposal3 } from './components/proposols/step3/prop3body';
+import { PropLayout3 } from './components/proposols/step3/prop3layout';
 function App() {
   return (
     <div className="App">
@@ -27,7 +29,13 @@ function App() {
       <Route path="/step2" exact>
       <PropLayout2/>
       </Route>
+
+      <Route path="/step3" exact>
+    
+      <PropLayout3/>
+      </Route>
       </Switch>
+
       
     </div>
   );

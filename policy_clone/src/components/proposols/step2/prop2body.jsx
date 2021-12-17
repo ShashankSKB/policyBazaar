@@ -63,7 +63,7 @@ function Proposal2()
         if(Nname&&Nage!= "")
         {
             console.log("proceed")
-            history.push("/step2")
+            history.push("/step3")
         }
     }
     

@@ -1,8 +1,10 @@
+import "../step1/prop1side.css"
+
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux"
-import "./prop1side.css"
 
-function Prop1side()
+
+function Prop3side()
 {
     const [loading,setLoading]=useState(false);
     const state= useSelector(store=>store.choice)
@@ -57,4 +59,4 @@ function Prop1side()
 }
 
 
-export {Prop1side}
+export {Prop3side}

@@ -1,13 +1,28 @@
 import "../step1/prop1side.css"
 
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux"
+
+
 function Prop2side()
 {
+    const [loading,setLoading]=useState(false);
+    const state= useSelector(store=>store.choice)
 
-    return(
+    useEffect(()=>{ 
+        if(state)
+        {
+            setLoading(true);
+        }
+    },[])
+   
+   
+
+    return loading ?(
         <div className="prop1parent-skb">
             <div className="prop1parent-skb-child">
                 <div>
-                <img src="https://static.pbcdn.in/twowheeler-cdn/InsurerImages/Bajaj_Allianz.gif"></img>
+                <img src={state.companyIcon}></img>
                 </div>
                 <div>
                     <p>Claim made : N/A</p>
@@ -26,7 +41,7 @@ function Prop2side()
 
             <div className="prop1parent-skb-child">
                 <div>
-                    <p style={{color:"green",fontSize:"20px"}}>RS 1,913*</p>
+                    <p style={{color:"green",fontSize:"20px"}}>RS .{state.price}*</p>
                     <p style={{color:"blue"}}>Premium Breakup</p>
                  </div>
                  <div>
@@ -34,6 +49,11 @@ function Prop2side()
                  </div>
                 
             </div>
+        </div>
+    ) :
+    (
+        <div>
+            <h1>Loading....</h1>
         </div>
     )
 }
