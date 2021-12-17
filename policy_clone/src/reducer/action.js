@@ -27,3 +27,11 @@ export const set_plan=(payload)=>{
     }
 
 }
+
+export const set_info=(payload)=>{
+
+    return {
+        type:SET_INFO,
+        payload
+    }
+}
