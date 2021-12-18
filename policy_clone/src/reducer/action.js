@@ -1,6 +1,6 @@
 import { ADD_PLAN, SET_PLAN } from "./actionTypes"
 import { GET_PLANS } from "./actionTypes"
-
+import { SET_INFO } from "./actionTypes"
 export const add_plan=(payload)=>{
 
     return {

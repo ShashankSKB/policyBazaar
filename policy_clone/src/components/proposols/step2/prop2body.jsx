@@ -99,7 +99,7 @@ function Proposal2()
         <div className='gridparent-skb'>
             <form onSubmit={(e)=>handlesubmit(e)}>
             <div className='step1-header-skb'>
-                <p>Proposal step 1/3</p>
+                <p>Proposal step 2/3</p>
             </div>
             
              <Grid container spacing={2} >
@@ -143,7 +143,7 @@ function Proposal2()
              </Grid>
 
 
-            <input type="submit" className='submitButton-skb' value="Continue to step 2  >>"></input>
+            <input type="submit" className='submitButton-skb' value="Continue to step 3  >>"></input>
             
              </form>
 

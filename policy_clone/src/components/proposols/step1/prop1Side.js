@@ -22,8 +22,8 @@ function Prop1side()
                 <div>
                 <img src={state.companyIcon}></img>
                 </div>
-                <div>
-                    <p>Claim made : N/A</p>
+                <div >
+                    <p style={{background:"#F5F5F5"}}>Claim made : N/A</p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ function Prop1side()
                     <p>NCB:N/A</p>
                  </div>
                 <div className="prop1parent-skb-child-grey">
-                    <p>Zero Deprecation : N/A</p>
+                    <p style={{background:"#F5F5F5"}}>Zero Deprecation : N/A</p>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ function Prop1side()
                     <p style={{color:"blue"}}>Premium Breakup</p>
                  </div>
                  <div>
-                     <p>Working policy</p>
+                     <p style={{background:"#F5F5F5"}}>Working policy</p>
                  </div>
                 
             </div>
