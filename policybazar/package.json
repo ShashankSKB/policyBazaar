@@ -14,6 +14,7 @@
     "react-dom": "^17.0.2",
     "react-elastic-carousel": "^0.11.5",
     "react-multi-carousel": "^2.6.5",
+    "react-responsive-modal": "^6.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"

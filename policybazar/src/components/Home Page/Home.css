@@ -93,6 +93,14 @@
     border-radius: 5px;
     box-shadow: #a8bde0 0px 0px 20px -5px, #aebdd6 0px 10px 10px -5px;
 }
+.home-tol:hover{
+    box-shadow: rgb(141, 175, 211) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+.home-tms:hover{
+    box-shadow: rgb(128, 156, 185) 0px 20px 30px -10px;
+    cursor: pointer;
+}
 .home-dot{
   height: 8px;
   width: 8px;
@@ -120,7 +128,7 @@
     color: #0663F6;
     font-size: 10px;
     position: absolute;
-    margin-top: 1%;
+    margin-top: 1.5%;
 }
 .home-tm1-5{
     color: #0663F6;
@@ -136,7 +144,7 @@
 }
 .home-tms{
     
-  margin-right: 15px;
+  margin-right: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
     width: 123px;
@@ -161,7 +169,7 @@
     margin-bottom: 0px;
 }
 .home-te1{
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 0px;
     font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
 }
@@ -189,7 +197,7 @@
     height: 180px;
   
     position: absolute;
-    margin-left: 70%;
+    margin-left: 72%;
     margin-top: 6%;
     padding: 10px;
     border-radius: 5px;
@@ -198,10 +206,9 @@
 .home-d3{
     width: 200px;
     height: 180px;
-  
     position: absolute;
-    margin-left: 53%;
-    margin-top: 20%;
+    margin-left: 56%;
+    margin-top: 23%;
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -209,10 +216,9 @@
 .home-d4{
     width: 200px;
     height: 180px;
-    
     position: absolute;
-    margin-left: 70%;
-    margin-top: 23%;
+    margin-left: 74%;
+    margin-top: 25%;
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -255,4 +261,173 @@
 }
 .home-de:hover  h5{
     font-weight: 700;
+}
+.home-pat{
+    text-align: center;
+     font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #010A19;
+    margin-bottom: 0%;
+}
+.home-ma-pat{
+width: 96%;
+margin-bottom: 2%;
+padding: 2%;
+background: #F0F6FF;
+}
+.home-pat1{
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+margin-top: 0%;
+/* identical to box height, or 200% */
+color: rgba(0,0,0,.36);
+text-align: center;
+}
+.home-ob{
+    width:120px;
+    height:55px;
+    background-color:white;
+    padding-left:10px;
+    padding-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     filter: rgb(192, 183, 183);
+     -webkit-filter: grayscale(1); 
+}
+
+.home-ob:hover{
+     filter: none;
+      -webkit-filter: grayscale(0);
+}
+.home-inv{  
+width: 100%;
+background: rgba(0, 0, 0, 0.04);
+height: 270px;
+margin-bottom: 5%;
+}
+.marquee {
+  background-color: #ddd;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee div {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 8s linear infinite;
+}
+.marquee:hover div {
+  animation-play-state: paused;
+}
+
+.marquee div:nth-child(1) {
+  animation-delay: 0s;
+}
+.marquee div:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.marquee div:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.marquee div:nth-child(4) {
+  animation-delay: 2.4s;
+}
+.marquee div:nth-child(5) {
+  animation-delay: 3.2s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+
+
+.home-hover-div{
+    position: absolute;
+    width: 1136px;
+    height: 728px;
+    background: #f1f1f1;
+    border-radius: 0px 0px 6px 6px;
+    display:none;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+/* footer css */
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+
+   
+}
+.footer-h1{
+    position: absolute;
+    width: 159px;
+    height: 30px;
+    margin-left: 13%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footer-f{
+    margin-left: 8%;
+}
+.footer-f >div{
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.footer-hov:hover  {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-boro{
+background: rgba(168, 168, 168, 0.15);
+ width: 100%;
+  height: 70px;
+}
+.footer-bor{
+ width: 80%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding:1px;
+margin-left: 95px;
+margin-right: 15px;
+}
+.footer-logo{
+    filter: gray;
+     -webkit-filter: grayscale(1); 
+        width: 40px;
+    height: 40px;
+    margin-top: 0.8%;
+ 
+}
+.footer-logo:hover{
+    filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+
+
+.react-multi-carousel-dot-list{
+    top: 90%;
+   bottom: -20px;
 }

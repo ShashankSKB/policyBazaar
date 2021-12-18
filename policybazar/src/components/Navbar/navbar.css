@@ -33,8 +33,13 @@
      transition: transform .7s ease-in-out;
      cursor: pointer;
 }
+.navbar-insu:hover .home-ho{
+    display:none;
+    background-color: red;
+}
 .navbar-insu:hover .navbar-vec{
     transform: rotate(180deg);
+    
 }
 .navbar-rev {
      margin-left :3%;
@@ -56,10 +61,38 @@
 }
 .navbar-rev:hover .navbar-vec1{
     transform: rotate(180deg);
+       
+}
+
+.new{
+    position: absolute;
+    
+    background: #f1f1f1;
+    border-radius: 0px 0px 6px 6px;
+   
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  line-height:16px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:0%;
+  background-color:white;
+  width:80%;
+  color:#253858;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar-insu:hover .home-total{
+    display:none;
+    background: red;
 }
 .navbar-file{
     margin-left: 19%;
-     cursor: pointer;
+     cursor: pointer; 
 }
 .navbar-sur{
     margin-left: 4%;
@@ -95,4 +128,14 @@
 .navbar-sign button:hover{
     box-shadow: rgba(103, 72, 240, 0.24) 0px 3px 8px;
      transform: scale(1);
+}
+.home-hover-small-div{
+    width: 210px;
+    height: 190px;
+    background-color: pink;
+      color: #253858;
+}
+.home-hover-small-div:hover p{
+    text-decoration: underline;
+  
 }
