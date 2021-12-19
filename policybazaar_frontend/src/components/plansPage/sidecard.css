@@ -1,0 +1,45 @@
+.sideParent-skb{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 4px #3469cb29;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.child1s-skb{
+    padding: 0px 10px;
+    border-bottom: 1px dotted gray;
+    justify-content: left;
+    text-align: left;
+}
+
+.child2s-skb{
+    padding: 10px;
+    height: 70px;
+    justify-content: left;
+    text-align: left;
+    font-size: 14px;
+    color: #69768c;
+}
+
+.child3s-skb{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 10px;
+justify-content: left;
+    text-align: left;
+    font-size: 14px;
+    color: #0065FF;
+
+}
+
+.child3s-skb >img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+
+}

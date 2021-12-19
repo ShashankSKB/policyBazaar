@@ -1,0 +1,127 @@
+.login-cont-r{
+    
+    width: 30%;
+    margin: 10% 35% 0% 35%;
+
+    border-radius: 6px;
+        border: 1px solid #00000033;
+    background: #FFFFFF;
+}
+.login-img-div{ 
+    padding-top: 7%;
+    text-align: center;
+}
+.Login-img-i-r{
+    width: 10%;
+}
+.inpt-div-login{
+    padding-top: 14%;
+    display: flex;
+    font-display: row;
+}
+.img-div-login-r{
+    width: 30%;
+}
+.img-div-p-r{
+    width: 90%;
+}
+.login-div-r-p{
+    margin: 0%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    width: 84%;
+    line-height: 30px;
+    padding: 0% 0% 0% 4%;
+    display: flex;
+    align-items: center;
+    color: #253858;
+}
+.login-inpt-div{
+ width:80%;
+    padding: 0% 10% 12% 10%;
+}
+.inpt-number-din-r{
+    margin-top: 8%;
+}
+.react-tel-input .form-control {
+   
+    width: 100% !important;
+   
+}
+.login-btn1-r{
+    margin-top: 5%;
+}
+.resend-otp-r{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/Blue/50 */
+
+    color: #0663F6;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 1% 4%;
+}
+.login-cross-i-r{
+    float: right;
+    margin: 2% 2% 0% 0%;
+}
+.desc-login-r{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    padding: 5% 30%;
+}
+.desc-1p-r{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.desc-2p-r{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #0663F6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.logn-body-rn{
+  
+    width: 100%;
+    height: auto;
+    padding-bottom: 240px;
+    position: relative;
+    background: linear-gradient(
+180deg, #FFFFFF 0%, rgba(240, 246, 255, 0.8) 100%);
+}

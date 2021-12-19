@@ -1,0 +1,19 @@
+.header-md {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+}
+.header-md-img {
+  width: 15%;
+  margin-left: 90px;
+}
+.language-md-btn {
+  width: 10%;
+  margin-left: 843px;
+  margin-top: 16px;
+}
+.logo-md-img {
+  width: 180px;
+  height: 30px;
+  margin-top: 14px;
+}

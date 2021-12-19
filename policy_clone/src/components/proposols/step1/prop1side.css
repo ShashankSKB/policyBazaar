@@ -1,0 +1,39 @@
+.prop1parent-skb{
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+    justify-content: right;
+    margin-left: 25%;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    height: 595px;
+    background-color: #F0F6FF;
+    padding: 10px;
+}
+
+.prop1parent-skb-child{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 6px 16px #3469cb29;
+
+   
+    margin: 10px 0px;
+}
+
+.prop1parent-skb-child :nth-child(1){
+    padding: 4px 30px;
+    background-color: #FFFFFF;
+}
+
+.prop1parent-skb-child-grey
+{
+    /* background-color:gray; */
+    
+}
+
+.prop1parent-skb-child  p
+{
+   
+    margin: 5px 0px;
+}

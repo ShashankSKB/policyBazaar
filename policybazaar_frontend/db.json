@@ -1,0 +1,55 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/Bajaj_Allianz.gif",
+      "type": "Regular Third Party Only",
+      "price": 752
+    },
+    {
+      "id": 2,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/SBI.gif",
+      "type": "Limited Third Party Only",
+      "price": 752
+    },
+    {
+      "id": 3,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/EdelweissTP.gif",
+      "type": "Regular Third Party Only",
+      "price": 752
+    },
+    {
+      "id": 4,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/IFFCOTOKIO.gif",
+      "type": "Limited Third Party Only ",
+      "price": 752
+    },
+    {
+      "id": 5,
+      "companyIcon": "https://static.pbcdn.in/twowheeler-cdn/InsurerImages/CholaMandalam.gif",
+      "type": "Regular Third Party Only",
+      "price": 752
+    }
+  ],
+  "info1": {
+    "Owner": "shashank",
+    "Mobile": "08087673255",
+    "Email": "shashankborkar16@gmail.com",
+    "Address": "c-15,affinity society",
+    "City": "pune",
+    "State": "Maharashtra",
+    "Pincode": "411001"
+  },
+  "info2": {
+    "Nname": "lata",
+    "Nage": "42"
+  },
+  "info3": {
+    "Nname": "",
+    "Nage": "1997",
+    "date": "12/04/2021",
+    "registration": "AJ-9903",
+    "Chasis": "1223456",
+    "Engine": "1412412"
+  }
+}

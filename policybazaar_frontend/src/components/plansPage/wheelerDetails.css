@@ -1,0 +1,84 @@
+.parentbox-skb{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 10px;
+    box-shadow: 0px 1px 4px #3469cb29;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.child1-skb{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.child1-skb >p{
+    margin: 0px;
+    font-weight: 450;
+}
+
+
+.child2-skb{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px;
+   
+}
+
+.child2-skb label p{
+    margin: 0px;
+}
+
+.child2-skb p{
+    margin: 0px;
+}
+.child2-skb label{
+    
+    font-style: normal;
+    color: #253858;
+    opacity: 0.5;
+    font-size: 10px;
+
+   
+    
+
+}
+
+
+
+
+.child3-skb{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px 0px 0px 0px;
+ 
+    background: #F2F7FF;
+}
+
+.child3-skb label p{
+    margin: 0px;
+    padding: 2px;
+}
+
+.child3-skb  p{
+    margin: 0px;
+    padding: 2px;
+}
+
+.child3-skb label{
+    
+    font-style: normal;
+    color: #253858;
+    opacity: 0.5;
+    font-size: 10px;
+
+   
+    
+
+}

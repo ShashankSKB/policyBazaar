@@ -1,0 +1,129 @@
+.container-r{ 
+    width: 100%; 
+    height: auto;
+    padding-bottom: 90px;
+    position: relative;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(240, 246, 255, 0.8) 100%);
+}
+.bikeno-conti-r{
+    width: 70%;
+    margin:5% 15%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.bikeno-img-r{
+    width: 45%;
+    background: #F0F6FF;
+    /* position: absolute; */
+}
+.bikeno-img-i-r{
+    padding: 1% 7%;
+    width: 39%;
+}
+.bikeno-img-aki-r{
+    width: 57%;
+    padding: 3% 21%;
+}
+.bikeno-inpt-r{
+    width: 55%;
+    padding-left: 10%;
+     /* position: absolute; */
+}
+.bikeno-head_r{
+    width: 58%;
+    padding: 0%;
+    padding-top: 8%;
+    margin:0%;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 41px;
+    color: #253858;
+/* position: absolute;  */
+}
+.bikeno-head-info-_r{
+    padding:1% 0% 2% 0%;
+    margin:0%;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+
+    /* Primary/Black */
+
+    color: #253858;
+}
+.img-tray-r-img{
+    
+    height: 25px;
+}
+.img-tray-r-img2{
+    height: 10px;
+    padding-bottom: 1.2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.img-tray-r-img5{
+    height: 8px;
+    padding-bottom: 1.5%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.ipntflied-r-div{
+    padding-top:6%
+}
+.ipntflied-r-btn{
+    padding-top:2%
+}
+.img-tray2-r-img3{  
+    height: 20px;
+    padding-right: 2%;
+}
+.img-tray2-r-img4{   
+    height: 20px;
+}
+.img-tray2-r{
+    padding-top:6%
+}
+.img-tray2-r-img2{
+    height: 10px;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+.img-tray2-r-img23{
+    height: 9.5px;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+.img-tray2-r-img{
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 20px;
+}
+.img-tray2-r-img22{
+    height: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.description_nu-r{
+    width: 62%;
+    padding: 0% 18% 0% 18%;
+    left: calc(52% - 833px/2 + 0.5px);
+    bottom: 162px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 114%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+.p_div_descriotop_r{
+    width: 100%;
+    text-align: center;
+}
