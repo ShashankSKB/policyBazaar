@@ -1,0 +1,142 @@
+.navbar{
+    width: 100%;
+
+    height: 60px;
+    display: flex;
+}
+.navbar .logo-s{
+    position: absolute;
+    height: 30px;
+    width: 184.5px;
+    left: 13%;
+    top: 15px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.navbar-insu{
+    margin-left :28%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #172B4D;
+    margin-top: 4px;
+    cursor: pointer;
+   
+    
+
+}
+.navbar-vec{
+    height: 12.1209991290089985px;
+    width: 15.414000179001828px;
+    position: absolute;
+    top:25px;
+    margin-left: 9%;
+     transition: transform .7s ease-in-out;
+     cursor: pointer;
+}
+.navbar-insu:hover .home-ho{
+    display:none;
+    background-color: red;
+}
+.navbar-insu:hover .navbar-vec{
+    transform: rotate(180deg);
+    
+}
+.navbar-rev {
+     margin-left :3%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #172B4D;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.navbar-vec1{
+    height: 12.1209991290089985px;
+    width: 15.414000179001828px;
+    position: absolute;
+    top:25px;
+    margin-left: 9%;
+     transition: transform .7s ease-in-out;
+     cursor: pointer;
+}
+.navbar-rev:hover .navbar-vec1{
+    transform: rotate(180deg);
+       
+}
+
+.new{
+    position: absolute;
+    
+    background: #f1f1f1;
+    border-radius: 0px 0px 6px 6px;
+   
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  line-height:16px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:0%;
+  background-color:white;
+  width:80%;
+  color:#253858;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar-insu:hover .home-total{
+    display:none;
+    background: red;
+}
+.navbar-file{
+    margin-left: 19%;
+     cursor: pointer; 
+}
+.navbar-sur{
+    margin-left: 4%;
+     cursor: pointer;
+}
+.navbar-vec2{
+    height: 12.1209991290089985px;
+    width: 15.414000179001828px;
+    position: absolute;
+    top:25px;
+    margin-left: 4%;
+     transition: transform .7s ease-in-out;
+     cursor: pointer;
+}
+.navbar-sur:hover .navbar-vec2{
+    transform: rotate(180deg);
+}
+
+.navbar-sign button{
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    color: #0663F6;
+    border-color: #0663F6;
+    border-radius: 5px;
+    margin-left: 110%;
+    margin-top: 15px;
+     transition: transform .2s;
+     cursor:pointer;
+     font-size: 17px;
+}
+
+.navbar-sign button:hover{
+    box-shadow: rgba(103, 72, 240, 0.24) 0px 3px 8px;
+     transform: scale(1);
+}
+.home-hover-small-div{
+    width: 210px;
+    height: 190px;
+    background-color: pink;
+      color: #253858;
+}
+.home-hover-small-div:hover p{
+    text-decoration: underline;
+  
+}

@@ -32,8 +32,8 @@
     }
   ],
   "info1": {
-    "Owner": "shasnak",
-    "Mobile": "90003412095",
+    "Owner": "shashank",
+    "Mobile": "08087673255",
     "Email": "shashankborkar16@gmail.com",
     "Address": "c-15,affinity society",
     "City": "pune",
@@ -41,15 +41,15 @@
     "Pincode": "411001"
   },
   "info2": {
-    "Nname": "rohan",
-    "Nage": "12"
+    "Nname": "lata",
+    "Nage": "42"
   },
   "info3": {
     "Nname": "",
-    "Nage": "1444",
+    "Nage": "1997",
     "date": "12/04/2021",
     "registration": "AJ-9903",
-    "Chasis": "AJ9903",
+    "Chasis": "1223456",
     "Engine": "1412412"
   }
 }

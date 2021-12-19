@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Switch >
-      <Route path="/" exact>
+      <Route path="/planlayout" exact>
         <PlanLayout/>
       </Route>
 

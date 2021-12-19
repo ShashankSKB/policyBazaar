@@ -1,0 +1,35 @@
+.gridparent-skb{
+    display: flex;
+    width: 88%;
+    justify-content: center;
+    margin: 10px 10px;
+    /* border: 1px solid black; */
+    padding: 10px 30px;
+    box-shadow: 0px 6px 16px #3469cb29;
+}
+
+.gridparent-skb label{
+    margin: 0px;
+}
+
+.step1-header-skb{
+    background-color: #253858;
+    padding: 16px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.submitButton-skb{
+    background-color: #62AF60;
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 13px;
+    border-radius: 4px;
+    margin: 20px 30%;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+}

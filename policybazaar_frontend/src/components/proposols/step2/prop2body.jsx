@@ -26,7 +26,7 @@ function Proposal2()
     
     
     const handleChange=(e)=>{
-        console.log(e.target.value,e.target.name)
+        // console.log(e.target.value,e.target.name)
         if(e.target.name=="Nname")
         {
             setNname(e.target.value);
@@ -51,7 +51,7 @@ function Proposal2()
         if(Nname=="")
         {
             setErrorMessageNname("error")
-            console.log("errorMessage",errorMessageNname)
+            // console.log("errorMessage",errorMessageNname)
         }
         else{
             setErrorMessageNname("")
@@ -71,7 +71,7 @@ function Proposal2()
 
         if(Nname&&Nage!= "")
         {
-            console.log("proceed")
+            // console.log("proceed")
 
             const postinfo=async()=>{
                 
@@ -99,7 +99,7 @@ function Proposal2()
         <div className='gridparent-skb'>
             <form onSubmit={(e)=>handlesubmit(e)}>
             <div className='step1-header-skb'>
-                <p >Proposal step 2/3</p>
+                <p>Proposal step 2/3</p>
             </div>
             
              <Grid container spacing={2} >

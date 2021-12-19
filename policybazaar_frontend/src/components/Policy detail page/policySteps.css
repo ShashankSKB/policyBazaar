@@ -1,0 +1,103 @@
+.policy-container-r{
+    width: 24%;
+    margin: 8% 38% 0%;
+    background: #FFFFFF;
+    border-radius: 11px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.policy-txt-r{
+    width: 90%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    /* Primary/Black */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    padding: 1.5% 5%;
+    color: #253858;
+ 
+}
+
+.policy-div-text-r{
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #F0F6FF;
+}
+.progrs-one-img{
+    width: 18%;
+}
+.progrs-two-img{
+    width: 18%;
+    opacity: 0.4
+}
+.progrs-one-2-img{
+    width: 18%;
+    opacity: 0.4
+}
+.progrs-two-2-img{
+    width: 18%;
+}
+.progrs-line-img{
+    width: 60%;
+    padding:7.5% 1%;
+}
+.progrs-icon-r{
+    display: flex;
+    /* text-align: center; */
+    /* position: static; */
+    padding: 8% 35% 0%;
+    align-self: center;
+}
+.policy-inpt-r{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    display: flex;
+    align-items: center;
+    /* Primary/Black */
+    color: #253858;
+}
+.ipnt-policy-r{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px 2px rgba(2, 63, 159, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4% 6%;
+    margin: 5% 0%;
+}
+.select-policy-r{
+    width: 80%;
+    padding:0% 10% 5%;
+}
+.policy-btm-d-r{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.backg-img-r{
+    width: 100%;
+    height: auto;
+    padding-bottom: 240px;
+    position: relative;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(240, 246, 255, 0.8) 100%);
+}
