@@ -13,6 +13,11 @@ export const PaymentDetails = () => {
     bikemodel,
     bikeyear}=data
 
+    const store=useSelector(state=>state.addressdetail);
+
+    console.log("reduce data",store);
+
+    const {info1,info2,info3}=store;
   const handleRoute = () => {
     history.push("/credit");
   };
@@ -40,7 +45,7 @@ export const PaymentDetails = () => {
           <div className="owner-md-de">
             <div>
               <p className="p1-md">Name of the vehical owner</p>
-              <p className="p2-md">Mr.Siddhant sunil Tayade</p>
+              <p className="p2-md">{info1.Owner}</p>
 
               <p
                 className="p1-md"
@@ -48,10 +53,11 @@ export const PaymentDetails = () => {
               >
                 Communication Address
               </p>
-              <p className="p2-md">Gurusai,Belavli Badlapur</p>
-              <p className="p3-md">West, Thane 45203</p>
+              
+              <p className="p2-md">{info1.Address}</p>
+              <p className="p3-md">{info1.City} {info1.Pincode}</p>
               <p className="p3-md" style={{ marginTop: "0", width: "110px" }}>
-                Maharastra
+                {info1.State}
               </p>
               <p
                 className="p1-md"
@@ -63,7 +69,7 @@ export const PaymentDetails = () => {
                 className="p3-md"
                 style={{ marginLeft: "4px", width: "220px" }}
               >
-                #####anttayad98@gmail.com
+                {info1.Email}
               </p>
               <p
                 className="p1-md"
@@ -75,7 +81,7 @@ export const PaymentDetails = () => {
                 className="p3-md"
                 style={{ marginLeft: "4px", width: "110px" }}
               >
-                7066549189
+                {info1.Mobile}
               </p>
             </div>
             <div>
@@ -84,7 +90,7 @@ export const PaymentDetails = () => {
                 className="p2-md"
                 style={{ marginLeft: "30px", width: "150px" }}
               >
-                Mrs.Sudha Sunil Tayade
+                {info2.Nname}
               </p>
               <p className="p1-md" style={{ marginTop: "15px" }}>
                 Nominee Relationship
@@ -106,7 +112,7 @@ export const PaymentDetails = () => {
                 className="p2-md"
                 style={{ width: "45px", marginLeft: "19px" }}
               >
-                49
+                {info2.Nage}
               </p>
             </div>
           </div>
@@ -139,8 +145,7 @@ export const PaymentDetails = () => {
               <p
                 className="p1-md"
                 style={{ width: "150px", marginLeft: "7px" }}
-              >
-                Regostration Number
+              >{info3.Engine}
               </p>
               <p
                 className="p2-md"
@@ -156,7 +161,7 @@ export const PaymentDetails = () => {
                 className="p1-md"
                 style={{ width: "250px", marginLeft: "15px" }}
               >
-                Chassis Number(Mentioned on your PC)
+                {info3.Chasis}(Mentioned on your PC)
               </p>
               <p
                 className="p2-md"
@@ -210,7 +215,7 @@ export const PaymentDetails = () => {
                 className="p2-md"
                 style={{ width: "96px", marginBottom: "14px" }}
               >
-                30/04/2015
+                {info3.date}
               </p>
               <p className="p1-md" style={{ width: "50px", marginLeft: "2px" }}>
                 NCB

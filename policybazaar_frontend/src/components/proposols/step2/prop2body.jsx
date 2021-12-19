@@ -8,9 +8,17 @@ import "../step1/proposol.css"
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { set_info2 } from '../../../Redux/action';
+import { useDispatch, useSelector } from 'react-redux';
 const axios = require('axios');
 function Proposal2()
-{  const history=useHistory()
+
+{
+    const store=useSelector(state=>state.addressdetail);
+    
+    const dispatch = useDispatch();
+
+      const history=useHistory()
     const [Nname,setNname]=useState("");
     const [Nage,setNage]=useState("");
     
@@ -75,14 +83,18 @@ function Proposal2()
 
             const postinfo=async()=>{
                 
-                try{
-                    const {data}=await axios.post('http://localhost:3004/info2', info2)
-                }
-                catch(err)
-                {
-                    console.log("error",err);
+                // try{
+                //     const {data}=await axios.post('http://localhost:3004/info2', info2)
+                // }
+                // catch(err)
+                // {
+                //     console.log("error",err);
 
-                }
+                // }
+
+                dispatch(set_info2(info2));
+            
+                console.log("store after dspatch info1",store)
                 
             }
 

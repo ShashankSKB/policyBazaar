@@ -24,6 +24,40 @@ const plans= new mongoose.Schema(
     }
 )
 
+// const info1= new mongoose.Schema(
+//     {
+//     Owner: {type:String,required:true},
+//     Mobile: {type:Number,required:true},
+//     Email: {type:String,required:true},
+//     Address: {type:String,required:true},
+//     City: {type:String,required:true},
+//     State: {type:String,required:true},
+//     Pincode: {type:Number,required:true},
+
+//     }
+// )
+
+// const info2= new mongoose.Schema(
+//     {
+//         Nname: {type:String,required:true},
+//         Nage: {type:Number,required:true},
+
+//     }
+// )
+
+// const info3= new mongoose.Schema(
+//     {
+//         Owner: {type:Number,required:true},
+//     Mobile: {type:Number,required:true},
+//     Email: {type:Number,required:true},
+//     Address: {type:Number,required:true},
+//     City: {type:Number,required:true},
+//     State: {type:Number,required:true},
+//     Pincode: {type:Number,required:true},
+
+//     }
+// )
+
 const Plan=mongoose.model("plan",plans);
 
 

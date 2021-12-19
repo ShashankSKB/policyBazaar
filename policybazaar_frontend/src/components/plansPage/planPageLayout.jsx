@@ -57,12 +57,16 @@ function PlanLayout()
     },[]);
 
     const getData=async()=>{
-        const {data}=await axios.get('http://localhost:3004/plans')
-        console.log("success :",data)
+        // const {data}=await axios.get('http://localhost:3004/plans')
+        // console.log("success :",data)
         
-        dispatch(get_plans(data))
+        // dispatch(get_plans(data))
 
-        setLoading(true)
+        if(temp)
+        {
+            setLoading(true)
+        }
+        
         
 
     }

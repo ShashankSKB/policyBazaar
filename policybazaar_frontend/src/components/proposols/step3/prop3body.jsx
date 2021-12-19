@@ -8,9 +8,15 @@ import "../step1/proposol.css"
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { set_info3 } from '../../../Redux/action';
 const axios = require('axios');
 function Proposal3()
-{  const history=useHistory()
+{   
+    const store=useSelector(state=>state.addressdetail);
+    
+    const dispatch = useDispatch();
+     const history=useHistory()
     const [engine,setEngine]=useState("");
     const [chasis,setChasis]=useState("");
     
@@ -74,20 +80,25 @@ function Proposal3()
         {
             console.log("proceed")
             
-            const postinfo=async()=>{
+            // const postinfo=async()=>{
                 
-                try{
-                    const {data}=await axios.post('http://localhost:3004/info3', info3)
-                }
-                catch(err)
-                {
-                    console.log("error",err);
+            //     // try{
+            //     //     const {data}=await axios.post('http://localhost:3004/info3', info3)
+            //     // }
+            //     // catch(err)
+            //     // {
+            //     //     console.log("error",err);
 
-                }
+            //     // }
                 
-            }
 
-            postinfo();
+            // }
+
+            // postinfo();
+
+            dispatch(set_info3(info3));
+            
+                console.log("store after dspatch info1",store)
             history.push("/login")
         }
     }

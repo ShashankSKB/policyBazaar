@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
+import { set_info1 } from '../../../Redux/action';
 const axios = require('axios');
 function Proposal1()
 {
@@ -40,6 +41,8 @@ function Proposal1()
     })
 
     const store=useSelector(state=>state.addressdetail);
+     const dispatch = useDispatch();
+    
     console.log("info store",store);
     
     const handleChange=(e)=>{
@@ -155,20 +158,24 @@ function Proposal1()
         {
             // console.log("proceed")
             
-            const postinfo=async()=>{
+            // const postinfo=async()=>{
                 
-                try{
-                    const {data}=await axios.post('http://localhost:3004/info1', info1)
-                }
-                catch(err)
-                {
-                    console.log("error",err);
+            //     try{
+            //         const {data}=await axios.post('http://localhost:3004/info1', info1)
+            //     }
+            //     catch(err)
+            //     {
+            //         console.log("error",err);
 
-                }
+            //     }
                 
-            }
+            // }
 
-            postinfo();
+            // postinfo();
+
+            dispatch(set_info1(info1));
+            
+            console.log("store after dspatch info1",store)
 
             
             history.push("/step2")
