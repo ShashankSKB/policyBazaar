@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Goibibo Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using create-react-app and Json server
 
-## Available Scripts
+## How to run app
 
-In the project directory, you can run:
+Clone the app
 
-### `npm start`
+`git clone <url>`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  
+  
 
-### `npm test`
+### How to run backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm i json-server`
+ `json-server --watch db.json --port 3001`
+ 
+ ### How to run frontend
 
-### `npm run build`
+`cd goibibo`
+`npm install`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Live Demo:
+`https://policybazaar-clone.netlify.app/`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### PolicyBazaar clone:
 
-### `npm run eject`
+`   "Buy or renew two wheeler insurance online . Free Quotes from Top Insurers with Lowest Premiums in 20 Seconds"
+`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### TEAM MEMBERS:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`Shashank Borkar`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`Rohan Patel`
 
-## Learn More
+`Shaista Sulthana`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`Mayank Diwakar`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ `Home page `
 
-### Analyzing the Bundle Size
+ `details related to the bike `
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`plans page`
 
-### Making a Progressive Web App
+`Signup`
+`Bill payment`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Tech stack used
 
-### Advanced Configuration
+`React`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`CSS`
 
-### Deployment
+`Javascript`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`Express`
 
-### `npm run build` fails to minify
+`Mongodb`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+'JSON-Server`
+
+`Node.js`
+
+### Check Blog on hashnode
+
+### (`https://medium.com/@shaistasulthana78/policy-bazar-clone-2d01e4672b7a`)
+
+### Screenshots
+
+### Landing page
+![Screenshot (1401)](https://user-images.githubusercontent.com/83760178/146816805-8193e808-6abb-4e70-98d1-813d5401663c.png)
+![Screenshot (1406)](https://user-images.githubusercontent.com/83760178/146816858-0914e3ab-02c8-4a19-bed7-c65061201abb.png)
+
+
+
+### User details page
+![Screenshot (1407)](https://user-images.githubusercontent.com/83760178/146816901-6834b4b9-ca29-46f1-b013-8d83ae287274.png)
+![Screenshot (1408)](https://user-images.githubusercontent.com/83760178/146816916-f777c640-745f-4f61-9ef3-ae7c8e0b1121.png)
+
+
+
+### Plans page
+![Screenshot (1410)](https://user-images.githubusercontent.com/83760178/146816935-4d987522-fdbf-4292-b9c6-13a5a3862c97.png)
+![Screenshot (1411)](https://user-images.githubusercontent.com/83760178/146816961-ea4ff4e0-596d-4ada-af63-2794ebe1bea9.png)
+![Screenshot (1412)](https://user-images.githubusercontent.com/83760178/146816973-b88fcfe0-2d42-4206-a5b5-c7164f2ec2ed.png)
+
+
+### Signup page
+![Screenshot (1423)](https://user-images.githubusercontent.com/83760178/146816987-a51cd3c5-16e1-48be-8423-2464d1ecd8b7.png)
+![Screenshot (1425)](https://user-images.githubusercontent.com/83760178/146817009-6cb81606-7eb1-4152-a4b9-4f933052a468.png)
+
+###Payment page
+![Screenshot (1419)](https://user-images.githubusercontent.com/83760178/146817063-cc16f4ec-f6ab-4b0f-9855-eb07181cbbd8.png)
+![Screenshot (1420)](https://user-images.githubusercontent.com/83760178/146817072-cc08b5e6-060e-4168-8ecf-8f58214d30b2.png)
+
+### [Click Here!](https://policybazaar-clone.netlify.app/)
