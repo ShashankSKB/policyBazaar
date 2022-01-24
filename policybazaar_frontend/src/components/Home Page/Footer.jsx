@@ -33,7 +33,7 @@ export const Footer=()=>{
                   <p className="footer-hov">Third Party Car Insurance</p>
                   <p className="footer-hov">Third Party Bike Insurance</p>
                   <p className="footer-hov">Travel Insurance</p>
-                  <p className="footer-hov">Commercial Vehicle Insurance</p>
+                  <p className="footer-hov">Commercial Vehicle Insurance plans</p>
                   </div>
                 </div>
             <div>
